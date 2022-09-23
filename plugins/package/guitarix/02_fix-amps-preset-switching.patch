@@ -6,8 +6,7 @@ index 9a4b6a30..19efa79f 100644
    inline void update_pre() 
      {pre = (alevel_);}
    inline bool val_changed() 
--    {return  std::abs(alevel_ - (*alevel)) > 0.1 || abs(clevel_ - (*clevel)) > 0.1 || std::abs(c_model_ - (*c_model)) > 0.1;}
-+    {return abs(val - ((*alevel) + (*clevel) + (*c_model))) > 0.1;}
- 
+-    {return std::abs(alevel_ - (*alevel)) > 0.1 ||      abs(clevel_ - (*clevel)) > 0.1 || std::abs(c_model_ - (*c_model)) > 0.1;}
++    {return std::abs(alevel_ - (*alevel)) > 0.1 || std::abs(clevel_ - (*clevel)) > 0.1 || std::abs(c_model_ - (*c_model)) > 0.1;}
    // LV2 stuff
    LV2_URID_Map*                map;
