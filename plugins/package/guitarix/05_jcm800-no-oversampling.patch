@@ -1,8 +1,8 @@
 diff --git a/trunk/src/LV2/gx_jcm800pre.lv2/jcm800pre.cc b/trunk/src/LV2/gx_jcm800pre.lv2/jcm800pre.cc
-index 9ce2203..198763d 100644
+index 9415467e..c3cca5df 100644
 --- a/trunk/src/LV2/gx_jcm800pre.lv2/jcm800pre.cc
 +++ b/trunk/src/LV2/gx_jcm800pre.lv2/jcm800pre.cc
-@@ -3830,7 +3830,7 @@ typedef enum
+@@ -3836,7 +3836,7 @@ typedef enum
  
  void DKPlugin::init(unsigned int samplingFreq, PluginLV2 *plugin) {
      DKPlugin& self = *static_cast<DKPlugin*>(plugin);
@@ -12,10 +12,10 @@ index 9ce2203..198763d 100644
     self.Y.setZero();
     unsigned int fs = samplingFreq;
 diff --git a/trunk/src/LV2/gx_jcm800pre_st.lv2/jcm800pre.cc b/trunk/src/LV2/gx_jcm800pre_st.lv2/jcm800pre.cc
-index 9ce2203..198763d 100644
+index 9415467e..c3cca5df 100644
 --- a/trunk/src/LV2/gx_jcm800pre_st.lv2/jcm800pre.cc
 +++ b/trunk/src/LV2/gx_jcm800pre_st.lv2/jcm800pre.cc
-@@ -3830,7 +3830,7 @@ typedef enum
+@@ -3836,7 +3836,7 @@ typedef enum
  
  void DKPlugin::init(unsigned int samplingFreq, PluginLV2 *plugin) {
      DKPlugin& self = *static_cast<DKPlugin*>(plugin);
