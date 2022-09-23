@@ -1,3 +1,16 @@
+diff --git a/trunk/tools/dsp2cc b/trunk/tools/dsp2cc
+index 958ea690..05352f37 100755
+--- a/trunk/tools/dsp2cc
++++ b/trunk/tools/dsp2cc
+@@ -505,7 +505,7 @@ class Parser(object):
+         s = {}
+         self.ui = UIDefs()
+         #self.readMeta()  # (needed only for faust 9.4
+-        self.headvers = self.skip_until(r"\s*//\s*(Code generated with Faust.*)").group(1)
++        self.headvers = self.skip_until(r"\s*(Code generated with Faust.*)").group(1)
+         s["includes"] = self.readIncludes(r"  private:")
+         #self.skip_until(r"  private:")
+         var_decl = self.copy(r"  public:")
 diff --git a/trunk/src/LV2/faust-generated/gx_vibrochump.cc b/trunk/src/LV2/faust-generated/gx_vibrochump.cc
 dissimilarity index 99%
 index 59210c05..65915e1f 100644
