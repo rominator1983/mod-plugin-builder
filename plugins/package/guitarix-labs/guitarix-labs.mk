@@ -12,7 +12,7 @@ GUITARIX_LABS_BUNDLES = gx_barkgraphiceq.lv2 gx_chorus.lv2 gx_graphiceq.lv2 gx_l
 GUITARIX_LABS_TARGET_WAF = $(TARGET_MAKE_ENV) $(TARGET_CONFIGURE_OPTS) EIGEN3_PATH=$(STAGING_DIR)/usr/include/eigen3/ $(HOST_DIR)/usr/bin/python2 ./waf
 
 define GUITARIX_LABS_CONFIGURE_CMDS
-	(cd $(@D)/trunk; $(GUITARIX_LABS_TARGET_WAF) configure --prefix=/usr --disable-sse --lv2-only --no-lv2-gui --no-faust)
+	(cd $(@D)/trunk; $(GUITARIX_LABS_TARGET_WAF) configure --prefix=/usr --disable-sse --mod-lv2 --no-lv2-gui --no-faust)
 endef
 
 define GUITARIX_LABS_BUILD_CMDS
