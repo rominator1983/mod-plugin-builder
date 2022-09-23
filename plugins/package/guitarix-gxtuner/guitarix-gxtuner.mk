@@ -13,7 +13,7 @@ GUITARIX_GXTUNER_BUNDLES = gxtuner.lv2
 GUITARIX_GXTUNER_TARGET_WAF = $(TARGET_MAKE_ENV) $(TARGET_CONFIGURE_OPTS) EIGEN3_PATH=$(STAGING_DIR)/usr/include/eigen3/ $(HOST_DIR)/usr/bin/python2 ./waf
 
 define GUITARIX_GXTUNER_CONFIGURE_CMDS
-	(cd $(@D); $(GUITARIX_GXTUNER_TARGET_WAF) configure --prefix=/usr --convolver-ffmpeg --disable-sse --no-ldconfig --no-lv2-gui --no-faust)
+	(cd $(@D); $(GUITARIX_GXTUNER_TARGET_WAF) configure --prefix=/usr --convolver-ffmpeg --disable-sse --no-ldconfig --no-lv2-gui --no-standalone --includeconvolver --no-faust)
 endef
 
 define GUITARIX_GXTUNER_BUILD_CMDS
