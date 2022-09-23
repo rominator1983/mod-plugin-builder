@@ -12,7 +12,7 @@ GUITARIX_STUDIOPRE_BUNDLES = gx_studiopre.lv2 gx_studiopre_st.lv2
 GUITARIX_STUDIOPRE_TARGET_WAF = $(TARGET_MAKE_ENV) $(TARGET_CONFIGURE_OPTS) EIGEN3_PATH=$(STAGING_DIR)/usr/include/eigen3/ $(HOST_DIR)/usr/bin/python2 ./waf
 
 define GUITARIX_STUDIOPRE_CONFIGURE_CMDS
-	(cd $(@D)/trunk; $(GUITARIX_STUDIOPRE_TARGET_WAF) configure --prefix=/usr --disable-sse --mod-lv2 --no-lv2-gui --no-faust)
+	(cd $(@D)/trunk; $(GUITARIX_STUDIOPRE_TARGET_WAF) configure --prefix=/usr --disable-sse --no-lv2-gui --no-faust)
 endef
 
 define GUITARIX_STUDIOPRE_BUILD_CMDS

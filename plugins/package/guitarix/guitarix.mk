@@ -13,7 +13,7 @@ GUITARIX_BUNDLES = gx_amp.lv2 gx_amp_stereo.lv2 gx_cabinet.lv2 gx_colwah.lv2 gx_
 GUITARIX_TARGET_WAF = $(TARGET_MAKE_ENV) $(TARGET_CONFIGURE_OPTS) EIGEN3_PATH=$(STAGING_DIR)/usr/include/eigen3/ $(HOST_DIR)/usr/bin/python2 ./waf
 
 define GUITARIX_CONFIGURE_CMDS
-	(cd $(@D)/trunk; $(GUITARIX_TARGET_WAF) configure --prefix=/usr --disable-sse --mod-lv2 --no-lv2-gui --no-faust)
+	(cd $(@D)/trunk; $(GUITARIX_TARGET_WAF) configure --prefix=/usr --disable-sse --no-lv2-gui --no-faust)
 endef
 
 define GUITARIX_BUILD_CMDS
