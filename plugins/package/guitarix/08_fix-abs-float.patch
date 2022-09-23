@@ -1,16 +1,3 @@
-diff --git a/trunk/src/LV2/gx_amp.lv2/gxamp.cpp b/trunk/src/LV2/gx_amp.lv2/gxamp.cpp
-index 19efa79f..a7b62bec 100644
---- a/trunk/src/LV2/gx_amp.lv2/gxamp.cpp
-+++ b/trunk/src/LV2/gx_amp.lv2/gxamp.cpp
-@@ -247,7 +247,7 @@ private:
-   inline void update_pre() 
-     {pre = (alevel_);}
-   inline bool val_changed() 
--    {return abs(val - ((*alevel) + (*clevel) + (*c_model))) > 0.1;}
-+    {return std::abs(val - ((*alevel) + (*clevel) + (*c_model))) > 0.1;}
- 
-   // LV2 stuff
-   LV2_URID_Map*                map;
 diff --git a/trunk/src/LV2/gx_amp_stereo.lv2/gxamp_stereo.cpp b/trunk/src/LV2/gx_amp_stereo.lv2/gxamp_stereo.cpp
 index 144dafce..8a90411b 100644
 --- a/trunk/src/LV2/gx_amp_stereo.lv2/gxamp_stereo.cpp
