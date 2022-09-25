@@ -1,22 +1,2 @@
 diff --git a/trunk/src/LV2/faust-generated/gx_vibrochump.cc b/trunk/src/LV2/faust-generated/gx_vibrochump.cc
 index f8fad4d4..65915e1f 100644
---- a/trunk/src/LV2/faust-generated/gx_vibrochump.cc
-+++ b/trunk/src/LV2/faust-generated/gx_vibrochump.cc
-@@ -112,7 +112,7 @@ class mydsp : public dsp {
- 		m->declare("filters.lib/iir:author", "Julius O. Smith III");
- 		m->declare("filters.lib/iir:copyright", "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>");
- 		m->declare("filters.lib/iir:license", "MIT-style STK-4.3 license");
--		m->declare("filters.lib/lowpass0_highpass1", "MIT-style STK-4.3 license");
-+		m->declare("filters.lib/lowpass0_highpass1", "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>");
- 		m->declare("filters.lib/lowpass0_highpass1:author", "Julius O. Smith III");
- 		m->declare("filters.lib/lowpass:author", "Julius O. Smith III");
- 		m->declare("filters.lib/lowpass:copyright", "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>");
-@@ -359,7 +359,7 @@ class mydsp : public dsp {
- 			float fTemp5 = 0.00820000004f * fRec3[1] + 1e-15f;
- 			fVec2[0] = fTemp5;
- 			fRec15[0] = 0.0f - fConst34 * (fConst35 * fRec15[1] - (fTemp5 + fVec2[1]));
--			fRec3[0] = float(Ftube(int(TUBE_TABLE_6V6_250k), float(0.925449848f * (fRec4[0] + fRec4[2]) + fRec15[0] + 1.8508997f * fRec4[1] + -1.13046205f))) + -112.138779f;
-+			fRec3[0] = float(Ftube(int(TUBE_TABLE_6V6_250k), float(1.8508997f * fRec4[1] + fRec15[0] + 0.925449848f * (fRec4[0] + fRec4[2]) + -1.13046205f))) + -112.138779f;
- 			fRec2[0] = 0.0250000004f * (fConst11 * fRec3[0] + fConst36 * fRec3[1]) - fConst37 * fRec2[1];
- 			fRec1[0] = 0.0f - fConst6 * (fConst7 * fRec1[1] - (fRec2[0] + fRec2[1]));
- 			fRec0[0] = fConst4 * fRec1[1] - fConst34 * (fConst35 * fRec0[1] - fConst2 * fRec1[0]);
